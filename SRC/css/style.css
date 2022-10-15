@@ -1,0 +1,283 @@
+/*TAGS*/
+body{
+    background-image: url(../imgs/eyes-blinking-pink-bg-edit.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    font-family: 'VT323', monospace;
+    /*#F6E3D6 #982A97*/color: #F6E3D6;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; /* aqui o align-items alinha verticalmente porque o flex-direction está como row, pois essa é a configuração padrão dele*/
+
+    min-height: 100vh; /*vh = viewport height - pare usar como base o tamanho da tela*/
+
+    padding: 30px;
+}
+
+
+/*CLASSES*/
+/*card*/
+.card{
+    width: 370px;
+    max-height: 550px;
+   
+    background-color: #5b1059;
+    
+    border: 3px solid #5ad462;
+    border-radius: 10px;
+    overflow: hidden;
+    
+
+}
+
+/*my-info*/
+.my-info{
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /*aqui o align itens está alinhando horizontalmente por causa do flex-direction que está em column*/
+
+    gap: 10px;
+
+}
+
+.my-info img{
+    width: 96px;
+    height: 96px;
+
+    border-radius: 50px; /*É o border-radius que arredonda nossos objetos*/
+    border: 4px solid #F046EF;
+
+    opacity: 1;
+}
+
+.name{
+    font-size: 26px;
+    color: #F6E3D6;
+
+}
+.job{
+    font-size: 20px;
+    color: #F6E3D6;
+    opacity: 0.7;
+
+}
+
+/*content*/
+.content{
+    margin-top: 15px;
+    opacity: 1;
+
+}
+/*tabs*/
+.tabs{
+    display: flex;
+}
+
+.tabs img{
+    width: 30px;
+}
+
+/*tabs individualmente*/
+.tab{
+    width: 50%;
+    padding: 10px 0;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease-in-out;
+}
+/*tabs hover*/
+.tab.about-me:hover{
+    background-color: #ac55a9;
+}
+
+.tab.social-medias:hover{
+    background-color: #ac55a9 ;
+}
+/*classes individuais das tabs que também estão aplicadas às info*/
+.about-me{
+    background-color: #5b1059;
+    
+}
+.tab.about-me{
+    border-bottom: 2px dashed #5ad462;
+}
+
+.about-me.selected{
+    background-color: #8e328b ;
+}
+
+.tab.selected{
+    border-top: 2px dashed #5ad462;
+    border-right: 2px dashed #5ad462;
+    border-left: 2px dashed #5ad462;
+    border-bottom: none;
+}
+
+.social-medias{
+    background-color: #5b1059;
+
+}
+.tab.social-medias{
+    border-bottom: 2px dashed #5ad462;
+}
+.tab.social-medias.selected{
+    border-bottom: none;
+}
+
+.social-medias.selected{
+    background-color: #8e328b ;
+}
+
+.info-tabs .info{
+    min-height: 300px;
+    padding: 15px;
+    display: none;
+}
+.info.selected{
+    display: block;
+}
+
+.info-title{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.text{
+    font-size: 20px;
+    text-align: justify;
+
+    padding-right: 15px;
+
+    max-height: 200px;
+    overflow-y: auto ;
+}
+/*alterando a cor dos spans usando as classes atribuídas a eles*/
+.audiovisual{
+    color: rgb(231, 136, 209);
+}
+.dev{
+    color: #6ede8e ;
+}
+
+.social-medias2{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+
+    max-height: 190x;
+    overflow-y: auto;
+
+}
+
+.social-medias1{
+   
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+
+    max-height: 190x;
+    overflow-y: auto;
+    
+    margin: 0px auto 15px auto;
+
+}
+
+.social-medias2 ul{
+    background-color: #8e328b;
+
+
+}
+
+.social-medias1 li a.curriculum{
+    width: 160px;
+    padding: 10px 5px;
+    border-radius: 20px;
+
+    margin: 0px auto 0px auto;
+
+    background-color: #5b1059;
+
+    font-size: 20px;
+    color: #f3f3f3;
+    text-align: center;
+
+    
+    display: block;
+    transition: opacity 0.2s ease-in-out;
+    
+}
+.social-medias1 li a.curriculum-eng{
+    width: 80px;
+    padding: 10px 5px;;
+    border-radius: 20px;
+    margin: 0px auto 0px auto;
+
+    background-color: #5b1059;
+
+    font-size: 20px;
+    color: #f3f3f3;
+    text-align: center;
+
+    
+    display: block;
+
+    transition: opacity 0.2s ease-in-out;
+    
+}
+
+.social-medias2 li a.linkedin,.github,.instagram{
+    
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+
+    background-color: #5b1059;
+
+    font-size: 20px;
+    color: #f3f3f3;
+    text-align: center;
+
+    
+    display: block;
+    transition: opacity 0.2s ease-in-out;
+
+}
+
+
+.curriculum:hover{
+    opacity: 0.7;
+}
+.curriculum-eng:hover{
+    opacity: 0.7;
+}
+.linkedin:hover{
+    opacity: 0.7;
+}
+.github:hover{
+    opacity: 0.7;
+}
+.instagram:hover{
+    opacity: 0.7;
+}
+
+

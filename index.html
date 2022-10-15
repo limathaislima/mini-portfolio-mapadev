@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Links que conectam ao CSS-->
+    <!--Para criar essa regra automaticamente podemos digitar link:css-->
+    <link rel="stylesheet" href="./SRC/css/reset.css">
+    <link rel="stylesheet" href="./SRC/css/style.css">
+    <link rel="stylesheet" href="./SRC/css/rolagem-edit.css">
+    <!--Links de instalação da fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+   
+
+    <title>Mini-portfolio tentando sozinha</title>
+</head>
+
+<body>
+    <main class="card">
+        <!--my-info = the part where the photo, name and job is displayed-->
+        <div class="my-info">
+            <img src="./SRC/imgs/foto-perfil-thais.jpg"
+                alt="black and white photography of Thaís smiling. She's white woman with black hair and round glasses. She wears a black shirt and has a dark tattoo themed with flowers on her right arm" title="Thaís Lima">
+            <h1 class="name">Thaís Lima</h1>
+            <h2 class="job">Desenvolvedora Frontend Junior</h2>
+        </div>
+
+        <!--content = where tabs and infos related to the tabs are displayed-->
+        <div class="content">
+            <!--tabs = tag of unordered list used to create the tabs-->
+            <ul class="tabs">
+                <li class="tab about-me selected" id="about-me">
+                    <img src="./SRC/imgs/steaming-mug.gif" alt="animated gif of a computer file opening" title="About me">
+                </li>
+
+                <li class="tab social-medias" id="social-medias">
+                    <img src="./SRC/imgs/speech-balloon.gif" alt="animated gif of a red heart spinning"
+                        title="Social Media">
+                </li>
+            </ul>
+            <!--End of TABS, themselves-->
+
+            <!--Beginning of INFO-TABS - the content related to the tabs-->
+            <div class="info-tabs">
+
+                <!--INFO OF TAB 1-->
+                <div class="info about-me selected" id="info-about-me"> 
+                    <h3 class="info-title">Sobre mim</h3>
+
+                    <div class="text">
+                        <p>Oi! Meu nome é Thaís Lima, seja bem-vindo(a)!</p>
+                        <p>
+                        Sou uma pessoa muito <span class="audiovisual">curiosa</span> e que gosta de novos desafios, por isso depois de 10 anos na área do audiovisual decidi migrar para a área de tecnologia e iniciei meus estudos em <span class="dev">HTML, CSS e JavaScript</span>. <br> Quero usar minha
+                        experiência com audiovisual e acessibilidade como um diferencial na minha carreira como Desenvolvedora Frontend. <br> <br> ☕️Eu adoro café e
+                        baleias, e meus principais hobbies são pedalar e estudar astrologia e tarot de forma
+                        terapêutica.
+                        </p>
+                    </div>
+                </div>
+
+                <!--INFO OF TAB 2-->
+
+                <div class="info social-medias" id="info-social-medias">
+                    <h3 class="info-title">Conecte-se comigo</h3>
+
+                    <ul class="social-medias1">
+                        <li class="social-media-button button-cv">
+                            <a href="https://docs.google.com/document/d/1eq7WOijQz3sHu0Ll2rpaapBtQlDExx0D8fARS9B1yUw/edit?usp=sharing" title="Curriculum" target="_blank" class="curriculum">Currículo 
+                            </a>
+                        </li>
+
+                        <li class="social-media-button button-eng">
+                            <a href="https://docs.google.com/document/d/1RwkeX2p5KCxqacppcPAU_aSemqkqwyLY_Dp4ZSgBl0Q/edit?usp=sharing" title="Curriculum" target="_blank" class="curriculum-eng">ENG 
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="social-medias2">
+
+                        <li class="social-media-button">
+                            <a href="http://linkedin.com/in/thaislimaphotos" title="LinkedIn" target="_blank" class="linkedin">LinkedIn 
+                            </a>
+                        </li>
+
+                        <li class="social-media-button">
+                            <a href="http://github.com/limathaislima" title="GitHub" target="_blank" class="github">GitHub 
+                            </a>
+                        </li>
+
+                        <li class="social-media-button">
+                            <a href="http://instagram.com/limathaislima" title="Instagram" target="_blank" class="instagram">Instagram 
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+            <!--END OF INFO-TABS-->
+
+        </div>
+    </main>
+    <script src="./SRC/js/index.js"></script>
+
+
+</body>
+
+</html>
